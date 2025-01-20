@@ -7,3 +7,6 @@ Status: Under review at IEEE Journal of Biomedical and Health Informatics (JBHI)
 Publication:
 
 Correia, I. B. M. C., Ferreira, M. V. S., Chini, C. F., Dias, B. S. S., Costa, L. R., Caetano, M. F., Leite, A. F., de Melo, N. S., & Farias, M. C. Q. (2024). Detection and segmentation of carotid atheroma calcification in dental panoramic radiographs using a hybrid deep learning model. Submitted to IEEE Journal of Biomedical and Health Informatics.
+
+
+![](https://i.imghippo.com/files/hr1992jZI.png)
