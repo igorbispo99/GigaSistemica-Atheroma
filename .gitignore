@@ -177,4 +177,6 @@ giga_detection/models
 
 *.jpg
 *.png
+*.json
 
+results/

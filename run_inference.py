@@ -320,7 +320,10 @@ def main():
 
             combined_mask = predict_segmentation_model(img_path, segmentation_model, device)
             mask_indices = np.where(combined_mask > 0)
-            img[mask_indices] = (0, 0, 255)
+            overlay = img.copy()
+            overlay[mask_indices] = (0, 0, 255)
+            alpha = 0.5  # Transparency factor
+            cv.addWeighted(overlay, alpha, img, 1 - alpha, 0, img)
 
         cv.imwrite(out_png, img)
 
