@@ -8,7 +8,7 @@ from torchvision import transforms, datasets
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
 
-folder = 'split/test'
+folder = r'C:\Users\theok\Downloads\giga_classifier\split\test'
 
 test_transform = transforms.Compose([
     transforms.Resize((250, 962)),
@@ -21,7 +21,7 @@ test_dataset = datasets.ImageFolder(folder, transform=test_transform)
 test_loader = DataLoader(test_dataset, batch_size=8, shuffle=False)
 
 
-model = torch.load('model_epoch_4_val_loss_0.264005.pt')
+model = torch.load(r'models\model_epoch_4_val_loss_0.264005.pt', map_location=torch.device('cpu'))
 
 model.eval()
 
